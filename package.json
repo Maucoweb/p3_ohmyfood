@@ -1,0 +1,11 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Mon projet OCR OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style_omf/style_smp.scss:./style_omf/css/style_.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

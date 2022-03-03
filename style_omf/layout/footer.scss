@@ -1,0 +1,44 @@
+footer {
+    background-color: rgb(53, 53, 53);
+    padding-bottom: 2rem;
+    color: rgb(242, 242, 242);
+}
+
+h4 {
+    font-family:  "shrikhand", sans-serif;
+    color: rgb(242, 242, 242);
+    margin-left: 25px;
+    margin-top: 0;
+    padding-top: 10%;
+    font-size: 20px;
+
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+
+    p {
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    a {
+        margin-top: 5px;
+        color:rgb(242, 242, 242);
+        text-decoration: none;
+        
+    }
+
+    a.footer--align1 {
+        margin-left: 15px;
+        margin-bottom: 8px;
+    }
+
+    a.footer--align2 {
+        margin-left:9px;
+        margin-bottom:8px;
+    }
+
+}

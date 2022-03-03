@@ -1,0 +1,60 @@
+main {
+    display: flex;
+    margin-bottom: 3%;
+
+    h3 {
+        align-self: flex-start;
+        margin-left: 18px;
+    }
+
+    .restaurant_accueil {
+        width: 100%;
+        background-color: rgb(246, 246, 246);
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8%;
+        padding-bottom: 10%;
+
+        article {
+            background-color: white;
+            border: none;
+            border-radius: 25px 25px 25px 25px;
+            padding-bottom: 1%;
+        }
+
+        a {
+            width: 90%;
+            margin-bottom: 1rem;
+            text-decoration: none;
+        }
+
+        img {
+            
+            width: 100%;
+            object-fit: cover;
+            height: 208px;
+            border-radius: 25px 25px 0px 0px;
+        }
+
+        .info_photo {
+            padding-left: 1rem;
+            color: black;
+            font-size: smaller;
+        }
+
+        .title_menu {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight:100;
+        }
+
+        .city {
+            margin-top: 0;
+            font-weight: 300;
+        }
+
+        
+    }
+}
