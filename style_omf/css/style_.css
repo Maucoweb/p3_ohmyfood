@@ -1,5 +1,17 @@
+/*---<titre>---*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*---<texte>---*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0px;
+  font-family: "roboto", sans-serif; }
 
 header {
   font-family: "shrikhand", sans-serif;
@@ -76,7 +88,7 @@ header {
   display: flex;
   justify-content: center;
   margin: 15px auto;
-  background-color: #bb76da;
+  background: linear-gradient(100deg, #9356DC, 70%, #FF79DA);
   box-shadow: 2px 1px 8px -2px black;
   border-radius: 40px 40px 40px 40px;
   height: 25px;
@@ -105,7 +117,9 @@ main {
       background-color: white;
       border: none;
       border-radius: 25px 25px 25px 25px;
-      padding-bottom: 1%; }
+      padding-bottom: 1%;
+      display: flex;
+      flex-direction: column; }
     main .restaurant_accueil a {
       width: 90%;
       margin-bottom: 1rem;
@@ -126,6 +140,8 @@ main {
     main .restaurant_accueil .city {
       margin-top: 0;
       font-weight: 300; }
+    main .restaurant_accueil i.fa-thin.fa-heart {
+      margin-left: 65%; }
 
 footer {
   background-color: #353535;
@@ -147,16 +163,20 @@ h4 {
   .footer_list p {
     margin-bottom: 0;
     margin-top: 5px; }
-  .footer_list a {
+  .footer_list .a__element {
     margin-top: 5px;
     color: #f2f2f2;
     text-decoration: none; }
-  .footer_list a.footer--align1 {
+  .footer_list .a__element--modif1 {
     margin-left: 15px;
-    margin-bottom: 8px; }
-  .footer_list a.footer--align2 {
+    margin-bottom: 8px;
+    color: #f2f2f2;
+    text-decoration: none; }
+  .footer_list .a__element--modif2 {
     margin-left: 9px;
-    margin-bottom: 8px; }
+    margin-bottom: 8px;
+    color: #f2f2f2;
+    text-decoration: none; }
 
 /*---<geolocalisation>---*/
 .geoloc_area {

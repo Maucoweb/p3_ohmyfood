@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     margin: 15px auto;
-    background-color: rgb(187, 118, 218);
+    background: linear-gradient(100deg, #9356DC,70%,#FF79DA);
     // box-shadow: 2px 1px 8px -2px black ;
     @include base-shadow;
     border-radius: 40px 40px 40px 40px;
