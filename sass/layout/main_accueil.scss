@@ -16,6 +16,7 @@ main {
         align-items: center;
         padding-top: 8%;
         padding-bottom: 10%;
+        
 
         article {
             background-color: white;
@@ -44,8 +45,17 @@ main {
             padding-left: 1rem;
             color: black;
             font-size: smaller;
-            
+            position: relative;
+
+            i {
+            font-size: 1.5rem;
+            position: absolute;
+            right: 1rem ;
+            top: 50%;
+            transform: translateY(-50%);
+            }
         }
+            
 
         .title_menu {
             margin-top: 5px;
@@ -57,10 +67,8 @@ main {
             margin-top: 0;
             font-weight: 300;
         }
-
-        i.fa-thin.fa-heart{
-            margin-left: 65%;
-        }
         
     }
+
+   
 }
