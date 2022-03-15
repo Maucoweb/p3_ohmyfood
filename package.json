@@ -4,7 +4,7 @@
   "description": "Mon projet OCR OhMyFood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./style_omf/style_smp.scss:./style_omf/css/style_.css"
+    "sass": "sass --watch ./sass/style.scss:./css/style.min.css"
   },
   "author": "",
   "license": "ISC"

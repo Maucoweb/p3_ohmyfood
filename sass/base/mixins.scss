@@ -1,0 +1,9 @@
+@mixin tablette-only{
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        @content;
+        }
+    }
+
+    $breakpoints:(
+        tablette-only:768px
+    )

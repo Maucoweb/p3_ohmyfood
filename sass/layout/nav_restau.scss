@@ -1,4 +1,4 @@
-
+@import "/base/mixins.scss";
 
 .nav_restaurant_accueil{
     
@@ -9,8 +9,10 @@
         gap: 1rem;
         padding: 1rem;
         list-style: none;
-        counter-reset: order;        
+        counter-reset: order;
+        @include tablette-only {flex-direction: row;}
     }
+
 
     & li {
         position: relative;
@@ -22,8 +24,8 @@
         border-radius: 1rem;
         display: flex;
         justify-content: center;
-        align-items: auto;
         align-items: center;
+        
         
         
         &::before {
