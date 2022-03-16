@@ -1,8 +1,17 @@
 @import "../base/mixins.scss";
 
+.title_nav {
+    margin-left: 18px;
+    margin-top: 40px;
+    margin-bottom: 0; 
+    @include desktop {font-size: 2rem;}
+}
+
 .nav_restaurant_accueil{
     
    
+    
+
     & ol {
         display: flex;
         flex-direction: column;
@@ -10,8 +19,7 @@
         padding: 1rem;
         list-style: none;
         counter-reset: order;
-        @include tablette-only {flex-direction:row;}
-        
+        @include desktop {flex-direction: row;}
     }
 
 
@@ -26,9 +34,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @include tablette-only {flex-direction:row;}
-        
-        
+        @include tablette-only {font-size: large;}
         
         &::before {
             content: counter(order);
@@ -50,7 +56,24 @@
      & i.fas {
         margin-right: 2rem;
         color: rgb(163, 156, 156);
-
+        @include tablette-only {font-size: xx-large;
+        margin-right: 3rem;}
     }
 
+    .violet::before {
+        color: rgb(147, 84, 220);
+    }
+
+    .choix {
+        @include tablette-only {width:80%;}
+    }
+
+    .composez {
+        @include tablette-only {width:90%;}
+    }
+
+    .deguster {
+        background-color: rgb(247, 237, 255);
+        @include tablette-only {width:95%;}
+    }
 }

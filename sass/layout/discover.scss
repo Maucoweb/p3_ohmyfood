@@ -1,3 +1,26 @@
+@import "../base/mixins.scss";
+
+
+.geoloc_area {
+  background-color: rgb(234, 234, 234); 
+}
+
+#geoloc { 
+  display: flex;
+  justify-content: center;
+  font-weight: 400; 
+}
+
+  h2 { 
+    font-size: 16px;
+    font-weight: 400;
+    @include desktop {font-size: 2rem;}  
+  }
+
+.logo_loc {
+  margin: auto 15px auto 15px; 
+  font-size: 2rem;}
+
 
 
 .text_accueil {
@@ -8,7 +31,9 @@
     flex-wrap: wrap;
     padding-top: 3%;
     background-color: #f9f9f9;
-    height: 240px; }
+    height: 240px; 
+    @include desktop {height: 360px;;}
+  }
   
   #titre_resaccueil {
     font-size: large;
@@ -16,6 +41,7 @@
     margin-left: 17%;
     margin-right: 17%; 
     font-weight: 400;
+    @include desktop {font-size: 2rem;}
   }
     
   
@@ -24,6 +50,7 @@
     margin-left: 12%;
     margin-right: 12%;
     font-weight: 100;
+    @include desktop {font-size: 2rem;}
    }
   
   .to_other_pages {
@@ -34,11 +61,12 @@
     background: linear-gradient(100deg, #9356DC,70%,#FF79DA);
     // box-shadow: 2px 1px 8px -2px black ;
     border-radius: 40px 40px 40px 40px;
-    height: 25px;
     color: aliceblue;
     font-size: small;
     font-weight: 700;
     height: 25%; 
     border: none;
+    @include desktop {font-size: 2rem;
+    height:20%}
   }
     

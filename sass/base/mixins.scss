@@ -1,9 +1,20 @@
 @mixin tablette-only{
-    @media screen and (max-width: map("$breakpoints, tablette")) {
-        @content;
-        }
+    @media screen and (min-width: map-get($breakpoints, tablette-only)) 
+{
+    &{ @content; }
     }
-
+}
     $breakpoints:(
-        tablette-only: 768px
-    )
+        tablette-only: 698px
+    );
+
+
+@mixin desktop{
+     @media screen and (min-width: map-get($breakpoints_desk, desktop)) 
+    {
+    &{ @content; }
+    }
+}
+    $breakpoints_desk:(
+        desktop: 900px
+    );
