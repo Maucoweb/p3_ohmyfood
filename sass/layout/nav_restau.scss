@@ -35,11 +35,19 @@
         justify-content: center;
         align-items: center;
         @include tablette-only {font-size: large;}
+
         
+        
+        &:hover {background-color: rgb(247, 237, 255);
+             i {
+                color: rgb(147, 84, 220);
+                }
+            }
+
         &::before {
             content: counter(order);
-            counter-increment: order;
-            background-color: rgb(147, 86, 220);
+            counter-increment: order; 
+            background-color: rgb(147, 84, 220);
             border-radius: 50%;
             display: flex;
             width:30px;
@@ -60,9 +68,6 @@
         margin-right: 3rem;}
     }
 
-    .violet::before {
-        color: rgb(147, 84, 220);
-    }
 
     .choix {
         @include tablette-only {width:80%;}
@@ -73,7 +78,7 @@
     }
 
     .deguster {
-        background-color: rgb(247, 237, 255);
+        
         @include tablette-only {width:95%;}
     }
 }
