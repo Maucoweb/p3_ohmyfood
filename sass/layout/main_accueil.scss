@@ -1,6 +1,5 @@
 main {
     display: flex;
-    margin-bottom: 3%;
 
 .bloc_main {
     display: flex;
@@ -47,8 +46,6 @@ main {
             
         }
 
-        
-
         img {
             
             width: 100%;
@@ -62,6 +59,7 @@ main {
             display: block;
             width: 90%;
             position: relative;
+            text-decoration: none;
            @include desktop {width: 48%;}
         }
 

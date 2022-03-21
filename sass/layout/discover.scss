@@ -67,6 +67,7 @@
     font-size: small;
     font-weight: 700;
     height: 25%; 
+    cursor: pointer;
     border: none;
     @include desktop {font-size: 2rem;
     height:20%}

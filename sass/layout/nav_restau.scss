@@ -67,18 +67,4 @@
         @include tablette-only {font-size: xx-large;
         margin-right: 3rem;}
     }
-
-
-    .choix {
-        @include tablette-only {width:80%;}
-    }
-
-    .composez {
-        @include tablette-only {width:90%;}
-    }
-
-    .deguster {
-        
-        @include tablette-only {width:95%;}
-    }
 }

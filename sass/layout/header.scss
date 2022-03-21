@@ -14,3 +14,27 @@ header {
        margin: 0;
     }
 }
+
+
+/*---<header_page 1>---*/
+
+.header_page_1 {
+    font-family: "shrikhand", sans-serif;
+    text-align: center;
+    box-shadow: none;
+    position: relative;
+    margin: 0;
+    @include desktop {font-size: 2rem;}
+}
+
+
+.page_1_accueil {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;}
+
+
+
+   
+

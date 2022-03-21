@@ -1,0 +1,136 @@
+.main_page_1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.bloc_main_page_1 {
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+
+.image_menu {
+    background-color: rgb(247, 246, 246);
+}
+
+.illustration_page_1 {
+    object-fit: cover;
+    width: 100%;
+}
+
+.menu_page_1 {
+    background-color:rgb(247, 246, 246);
+
+    .ss_titre_page_1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(247, 246, 246);
+        position: relative;
+        bottom: 50px;
+        border-radius: 35px 35px 0px 0px;
+
+        .titre_la_palette_du_gout {
+            font-family: "shrikhand", sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        .heart_page_1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .detail_menu--entrées {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3 {
+        margin-top: 0;
+        color: rgb(76, 76, 76);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    article {
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 3px 3px 3px 1px rgb(231, 231, 230);
+        width: 95%;
+        margin-bottom: 4%;
+    
+
+            h4 {
+            font-family: "roboto";
+            color: black;
+            font-size: 0.9rem;
+            padding-top: 5%;
+            margin-bottom: 0;
+            }
+
+            .description_menu {
+                display: flex;
+                justify-content: space-between;
+                margin-right: 30px;
+            }
+
+
+            p {
+                margin-left: 25px;
+                margin-top: 2%;
+                font-weight: 300;
+                color: rgb(76, 76, 76);
+                font-size: 0.85rem;
+            }
+
+            .price {
+                margin-left: 5%;
+            }
+
+        }
+
+        .detail_menu--plats {
+            margin-top: 7%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .detail_menu--desserts {
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+ 
+
+    .commander { 
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    background: linear-gradient(100deg, #9356DC,70%,#FF79DA);
+    // box-shadow: 2px 1px 8px -2px black ;
+    border-radius: 40px 40px 40px 40px;
+    color: aliceblue;
+    font-size: large;
+    font-weight: 400;
+    height: 25%; 
+    border: none;
+    cursor: pointer;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+    @include desktop {font-size: 2rem;
+    height:20%}
+   
+}
+
+.button--commande {
+    margin-bottom:15%;
+}
+}
+
