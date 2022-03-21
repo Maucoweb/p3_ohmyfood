@@ -355,6 +355,9 @@ h4 {
   flex-direction: column;
   position: relative; }
 
+.back {
+  color: #4c4c4c; }
+
 .bloc_main_page_1 {
   width: 100%;
   background-color: #f7f7f7; }
