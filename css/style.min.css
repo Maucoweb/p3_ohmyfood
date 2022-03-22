@@ -41,8 +41,12 @@ header {
 .page_accueil {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 90%; }
+  width: 100%; }
+  .page_accueil a {
+    width: 25%; }
+  .page_accueil h1 {
+    width: 50%;
+    margin: 0; }
 
 .title_nav {
   margin-left: 18px;
@@ -350,6 +354,11 @@ h4 {
     color: #f2f2f2;
     text-decoration: none; }
 
+@keyframes appear {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 .main_page {
   display: flex;
   flex-direction: column;
@@ -374,8 +383,8 @@ h4 {
   background-color: #f7f6f6; }
   .menu_page .ss_titre_page {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: baseline;
+    justify-content: space-evenly;
     background-color: #f7f6f6;
     position: relative;
     bottom: 50px;
@@ -400,7 +409,8 @@ h4 {
     background-color: white;
     box-shadow: 3px 3px 3px 1px #e7e7e6;
     width: 95%;
-    margin-bottom: 4%; }
+    margin-bottom: 4%;
+    animation: 2s appear; }
     .menu_page article h4 {
       font-family: "roboto";
       color: black;

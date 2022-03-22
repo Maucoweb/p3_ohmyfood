@@ -1,3 +1,12 @@
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .main_page {
     display: flex;
     flex-direction: column;
@@ -28,8 +37,8 @@
 
     .ss_titre_page{
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        align-items: baseline;
+        justify-content: space-evenly;
         background-color: rgb(247, 246, 246);
         position: relative;
         bottom: 50px;
@@ -65,6 +74,7 @@
         box-shadow: 3px 3px 3px 1px rgb(231, 231, 230);
         width: 95%;
         margin-bottom: 4%;
+        animation: 2s appear ;
     
 
             h4 {
