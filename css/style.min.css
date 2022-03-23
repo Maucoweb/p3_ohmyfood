@@ -354,11 +354,11 @@ h4 {
     color: #f2f2f2;
     text-decoration: none; }
 
-@keyframes appear {
-  0% {
-    transform: scale(0); }
-  100% {
-    transform: scale(1); } }
+@keyframes affichage {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .main_page {
   display: flex;
   flex-direction: column;
@@ -389,7 +389,7 @@ h4 {
     position: relative;
     bottom: 50px;
     border-radius: 35px 35px 0px 0px; }
-    .menu_page .ss_titre_page .titre_la_palette_du_gout {
+    .menu_page .ss_titre_page .restaurant_name {
       font-family: "shrikhand", sans-serif;
       font-size: 1.5rem;
       margin-bottom: 0; }
@@ -409,57 +409,96 @@ h4 {
     background-color: white;
     box-shadow: 3px 3px 3px 1px #e7e7e6;
     width: 95%;
-    margin-bottom: 4%;
-    animation: 2s appear; }
-    .menu_page article h4 {
-      font-family: "roboto";
-      color: black;
-      font-size: 0.9rem;
-      padding-top: 5%;
-      margin-bottom: 0; }
-    .menu_page article .description_menu {
-      display: flex;
-      justify-content: space-between;
-      margin-right: 30px; }
-    .menu_page article p {
-      margin-left: 25px;
-      margin-top: 2%;
-      font-weight: 300;
-      color: #4c4c4c;
-      font-size: 0.85rem; }
-    .menu_page article .price {
-      margin-left: 5%; }
-  .menu_page .detail_menu--plats {
-    margin-top: 7%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .menu_page .detail_menu--desserts {
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .menu_page .commander {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    margin: 15px auto;
-    background: linear-gradient(100deg, #9356DC, 70%, #FF79DA);
-    border-radius: 40px 40px 40px 40px;
-    color: aliceblue;
-    font-size: large;
-    font-weight: 400;
-    height: 25%;
-    border: none;
-    cursor: pointer;
+    margin-bottom: 4%; }
+  .menu_page .menu_1 {
+    animation: affichage 500ms;
+    animation-fill-mode: both;
+    animation-delay: 560ms; }
+  .menu_page .menu_2 {
+    animation: affichage 500ms;
+    animation-fill-mode: both;
+    animation-delay: 910ms; }
+  .menu_page .menu_3 {
+    animation: affichage 500ms;
+    animation-fill-mode: both;
+    animation-delay: 1260ms; }
+  .menu_page .menu_4 {
+    animation: affichage 500ms;
+    animation-fill-mode: both;
+    animation-delay: 1610ms; }
+  .menu_page .menu_5 {
+    animation: affichage 500ms;
+    animation-fill-mode: both;
+    animation-delay: 1960ms; }
+  .menu_page .menu_6 {
+    animation: affichage 500ms;
+    animation-fill-mode: both;
+    animation-delay: 2310ms; }
+  .menu_page .menu_7 {
+    animation: affichage 500ms;
+    animation-fill-mode: both;
+    animation-delay: 2660ms; }
+  .menu_page .menu_8 {
+    animation: affichage 500ms;
+    animation-fill-mode: both;
+    animation-delay: 3010ms; }
+  .menu_page .menu_9 {
+    animation: affichage 500ms;
+    animation-fill-mode: both;
+    animation-delay: 3360ms; }
+  .menu_page h4 {
+    font-family: "roboto";
+    color: black;
+    font-size: 0.9rem;
     padding-top: 5%;
-    padding-bottom: 5%;
-    margin-top: 10%; }
-    @media screen and (min-width: 900px) {
-      .menu_page .commander {
-        font-size: 2rem;
-        height: 20%; } }
-  .menu_page .button--commande {
-    margin-bottom: 15%; }
+    margin-bottom: 0; }
+  .menu_page .description_menu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px; }
+  .menu_page p {
+    margin-left: 25px;
+    margin-top: 2%;
+    font-weight: 300;
+    color: #4c4c4c;
+    font-size: 0.85rem; }
+  .menu_page .price {
+    margin-left: 5%; }
+
+.detail_menu--plats {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.detail_menu--desserts {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.commander {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+  background: linear-gradient(100deg, #9356DC, 70%, #FF79DA);
+  border-radius: 40px 40px 40px 40px;
+  color: aliceblue;
+  font-size: large;
+  font-weight: 400;
+  height: 25%;
+  border: none;
+  cursor: pointer;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 10%; }
+  @media screen and (min-width: 900px) {
+    .commander {
+      font-size: 2rem;
+      height: 20%; } }
+
+.button--commande {
+  margin-bottom: 15%; }
 
 /*# sourceMappingURL=style.min.css.map */
