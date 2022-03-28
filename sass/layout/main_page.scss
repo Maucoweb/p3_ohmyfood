@@ -43,6 +43,9 @@
         position: relative;
         bottom: 50px;
         border-radius: 35px 35px 0px 0px;
+        @include desktop {
+            justify-content: center;
+        }
 
         .restaurant_name {
             font-family: "shrikhand", sans-serif;
@@ -52,6 +55,10 @@
 
         .heart_page {
             font-size: 1.5rem;
+            margin-left: 5%;
+        }
+        & :hover .heartfull_page {
+            background: linear-gradient(100deg, #9356DC,70%,#FF79DA);
         }
     }
 

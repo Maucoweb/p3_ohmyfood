@@ -397,12 +397,18 @@ h4 {
     position: relative;
     bottom: 50px;
     border-radius: 35px 35px 0px 0px; }
+    @media screen and (min-width: 900px) {
+      .menu_page .ss_titre_page {
+        justify-content: center; } }
     .menu_page .ss_titre_page .restaurant_name {
       font-family: "shrikhand", sans-serif;
       font-size: 1.5rem;
       margin-bottom: 0; }
     .menu_page .ss_titre_page .heart_page {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      margin-left: 5%; }
+    .menu_page .ss_titre_page :hover .heartfull_page {
+      background: linear-gradient(100deg, #9356DC, 70%, #FF79DA); }
   .menu_page .detail_menu--entrées {
     display: flex;
     flex-direction: column;
