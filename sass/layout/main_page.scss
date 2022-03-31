@@ -95,6 +95,7 @@
         width: 95%;
         margin-bottom: 4%;
         height: 72px;
+        overflow: hidden;
     }
 
         .check_menu {
@@ -113,10 +114,10 @@
             justify-content: space-between;
 
             .price {
-                margin-left: 20%;
+                
                 display: flex;
                 align-items: flex-end;
-                margin-right: 8%;
+                
             }
         }
 
@@ -130,7 +131,7 @@
             .price {
                 display: flex;
                 align-items: flex-end;
-                margin-right: 8%;
+                
             }
             
         }
@@ -143,10 +144,10 @@
             justify-content: space-between;
 
             .price {
-                margin-left: 24%;
+                
                 display: flex;
                 align-items: flex-end;
-                margin-right: 8%;
+                
             }
         }
 
@@ -158,10 +159,10 @@
             justify-content: space-between;
 
             .price {
-                margin-left: 20%;
+                
                 display: flex;
                 align-items: flex-end;
-                margin-right: 8%;
+                
             }
         }
 
@@ -173,10 +174,10 @@
             justify-content: space-between;
 
             .price {
-                margin-left: 20%;
+                
                 display: flex;
                 align-items: flex-end;
-                margin-right: 8%;
+                
             }
         }
 
@@ -188,10 +189,10 @@
             justify-content: space-between;
 
             .price {
-                margin-left: 20%;
+                
                 display: flex;
                 align-items: flex-end;
-                margin-right: 8%;
+                
             }
         }
 
@@ -203,10 +204,10 @@
             justify-content: space-between;
 
             .price {
-                margin-left: 20%;
+                
                 display: flex;
                 align-items: flex-end;
-                margin-right: 8%;
+                
             }
         }
 
@@ -218,10 +219,10 @@
             justify-content: space-between;
 
             .price {
-                margin-left: 20%;
+                
                 display: flex;
                 align-items: flex-end;
-                margin-right: 8%;
+               
             }
         }
 
@@ -233,10 +234,10 @@
             justify-content: space-between;
 
             .price {
-                margin-left: 20%;
+                
                 display: flex;
                 align-items: flex-end;
-                margin-right: 8%;
+                
             }
         }
     
@@ -256,6 +257,7 @@
                 flex-direction: column;
                 margin-top: 2%;
                 flex-wrap: nowrap;
+                width: 60%;
             }
 
             .detail_menu_price {
