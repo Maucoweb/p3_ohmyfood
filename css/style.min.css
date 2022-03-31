@@ -431,43 +431,111 @@ h4 {
     background-color: white;
     box-shadow: 3px 3px 3px 1px #e7e7e6;
     width: 95%;
-    margin-bottom: 4%; }
+    margin-bottom: 4%;
+    height: 72px; }
+  .menu_page .check_menu {
+    width: 60px;
+    background-color: green;
+    margin-right: -25%;
+    border-radius: 0px 15px 15px 0px; }
   .menu_page .menu_1 {
     animation: affichage 500ms;
     animation-fill-mode: both;
-    animation-delay: 560ms; }
+    animation-delay: 560ms;
+    display: flex;
+    justify-content: space-between; }
+    .menu_page .menu_1 .price {
+      margin-left: 20%;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 8%; }
   .menu_page .menu_2 {
     animation: affichage 500ms;
     animation-fill-mode: both;
-    animation-delay: 910ms; }
+    animation-delay: 910ms;
+    display: flex;
+    justify-content: space-between; }
+    .menu_page .menu_2 .price {
+      display: flex;
+      align-items: flex-end;
+      margin-right: 8%; }
   .menu_page .menu_3 {
     animation: affichage 500ms;
     animation-fill-mode: both;
-    animation-delay: 1260ms; }
+    animation-delay: 1260ms;
+    display: flex;
+    justify-content: space-between; }
+    .menu_page .menu_3 .price {
+      margin-left: 24%;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 8%; }
   .menu_page .menu_4 {
     animation: affichage 500ms;
     animation-fill-mode: both;
-    animation-delay: 1610ms; }
+    animation-delay: 1610ms;
+    display: flex;
+    justify-content: space-between; }
+    .menu_page .menu_4 .price {
+      margin-left: 20%;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 8%; }
   .menu_page .menu_5 {
     animation: affichage 500ms;
     animation-fill-mode: both;
-    animation-delay: 1960ms; }
+    animation-delay: 1960ms;
+    display: flex;
+    justify-content: space-between; }
+    .menu_page .menu_5 .price {
+      margin-left: 20%;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 8%; }
   .menu_page .menu_6 {
     animation: affichage 500ms;
     animation-fill-mode: both;
-    animation-delay: 2310ms; }
+    animation-delay: 2310ms;
+    display: flex;
+    justify-content: space-between; }
+    .menu_page .menu_6 .price {
+      margin-left: 20%;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 8%; }
   .menu_page .menu_7 {
     animation: affichage 500ms;
     animation-fill-mode: both;
-    animation-delay: 2660ms; }
+    animation-delay: 2660ms;
+    display: flex;
+    justify-content: space-between; }
+    .menu_page .menu_7 .price {
+      margin-left: 20%;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 8%; }
   .menu_page .menu_8 {
     animation: affichage 500ms;
     animation-fill-mode: both;
-    animation-delay: 3010ms; }
+    animation-delay: 3010ms;
+    display: flex;
+    justify-content: space-between; }
+    .menu_page .menu_8 .price {
+      margin-left: 20%;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 8%; }
   .menu_page .menu_9 {
     animation: affichage 500ms;
     animation-fill-mode: both;
-    animation-delay: 3360ms; }
+    animation-delay: 3360ms;
+    display: flex;
+    justify-content: space-between; }
+    .menu_page .menu_9 .price {
+      margin-left: 20%;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 8%; }
   .menu_page h4 {
     font-family: "roboto";
     color: black;
@@ -476,16 +544,19 @@ h4 {
     margin-bottom: 0; }
   .menu_page .description_menu {
     display: flex;
-    justify-content: space-between;
-    margin-right: 30px; }
+    justify-content: space-around;
+    margin-right: 30px;
+    flex-direction: column;
+    margin-top: 2%;
+    flex-wrap: nowrap; }
+  .menu_page .detail_menu_price {
+    display: flex; }
   .menu_page p {
     margin-left: 25px;
     margin-top: 2%;
     font-weight: 300;
     color: #4c4c4c;
     font-size: 0.85rem; }
-  .menu_page .price {
-    margin-left: 5%; }
 
 .detail_menu--plats {
   margin-top: 7%;

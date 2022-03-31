@@ -94,18 +94,44 @@
         box-shadow: 3px 3px 3px 1px rgb(231, 231, 230);
         width: 95%;
         margin-bottom: 4%;
+        height: 72px;
     }
+
+        .check_menu {
+            width: 60px;
+            background-color: green;
+            margin-right: -25%;
+            border-radius: 0px 15px 15px 0px;
+        }
+        
 
         .menu_1 {
             animation: affichage 500ms;
             animation-fill-mode: both;
             animation-delay: 560ms;
+            display: flex;
+            justify-content: space-between;
+
+            .price {
+                margin-left: 20%;
+                display: flex;
+                align-items: flex-end;
+                margin-right: 8%;
+            }
         }
 
         .menu_2{
             animation: affichage 500ms ;
             animation-fill-mode: both;
             animation-delay: 910ms;
+            display: flex;
+            justify-content: space-between;
+
+            .price {
+                display: flex;
+                align-items: flex-end;
+                margin-right: 8%;
+            }
             
         }
 
@@ -113,42 +139,105 @@
             animation: affichage 500ms ;
             animation-fill-mode: both;
             animation-delay:1260ms;
+            display: flex;
+            justify-content: space-between;
+
+            .price {
+                margin-left: 24%;
+                display: flex;
+                align-items: flex-end;
+                margin-right: 8%;
+            }
         }
 
         .menu_4{
             animation: affichage 500ms ;
             animation-fill-mode: both;
             animation-delay: 1610ms;
+            display: flex;
+            justify-content: space-between;
+
+            .price {
+                margin-left: 20%;
+                display: flex;
+                align-items: flex-end;
+                margin-right: 8%;
+            }
         }
 
         .menu_5{
             animation: affichage 500ms ;
             animation-fill-mode: both;
             animation-delay: 1960ms;
+            display: flex;
+            justify-content: space-between;
+
+            .price {
+                margin-left: 20%;
+                display: flex;
+                align-items: flex-end;
+                margin-right: 8%;
+            }
         }
 
         .menu_6{
             animation: affichage 500ms ;
             animation-fill-mode: both;
             animation-delay: 2310ms;
+            display: flex;
+            justify-content: space-between;
+
+            .price {
+                margin-left: 20%;
+                display: flex;
+                align-items: flex-end;
+                margin-right: 8%;
+            }
         }
 
         .menu_7{
             animation: affichage 500ms ;
             animation-fill-mode: both;
             animation-delay: 2660ms;
+            display: flex;
+            justify-content: space-between;
+
+            .price {
+                margin-left: 20%;
+                display: flex;
+                align-items: flex-end;
+                margin-right: 8%;
+            }
         }
 
         .menu_8{
             animation: affichage 500ms ;
             animation-fill-mode: both;
             animation-delay: 3010ms;
+            display: flex;
+            justify-content: space-between;
+
+            .price {
+                margin-left: 20%;
+                display: flex;
+                align-items: flex-end;
+                margin-right: 8%;
+            }
         }
 
         .menu_9{
             animation: affichage 500ms;
             animation-fill-mode: both;
             animation-delay: 3360ms;
+            display: flex;
+            justify-content: space-between;
+
+            .price {
+                margin-left: 20%;
+                display: flex;
+                align-items: flex-end;
+                margin-right: 8%;
+            }
         }
     
 
@@ -162,10 +251,16 @@
 
             .description_menu {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 margin-right: 30px;
+                flex-direction: column;
+                margin-top: 2%;
+                flex-wrap: nowrap;
             }
 
+            .detail_menu_price {
+                display: flex;
+            }
 
             p {
                 margin-left: 25px;
@@ -173,11 +268,7 @@
                 font-weight: 300;
                 color: rgb(76, 76, 76);
                 font-size: 0.85rem;
-            }
-
-            .price {
-                margin-left: 5%;
-            }
+            }      
 
         }
 
