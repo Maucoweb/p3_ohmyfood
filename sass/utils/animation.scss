@@ -6,3 +6,25 @@
           opacity: (1);
         }   
 }
+
+@keyframes translate {
+      from {
+            margin-right: -4rem;
+      }
+      
+
+      to {
+            margin-right: 0;
+      }
+}
+
+
+@keyframes rotateCheck {
+      0% {
+            transform: rotate(-360deg);
+      }
+
+      100% {
+            transform: rotate(0);
+      }
+}

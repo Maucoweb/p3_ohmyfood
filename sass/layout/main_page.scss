@@ -7,6 +7,8 @@
         }   
 } */
 
+
+
 .main_page {
     display: flex;
     flex-direction: column;
@@ -96,16 +98,28 @@
         margin-bottom: 4%;
         height: 72px;
         overflow: hidden;
+        cursor: pointer;
+    }
+
+    .price {
+        @include desktop {
+            margin-right: 0;
+            width: 0;
+        }
     }
 
         .check_menu {
-            width: 60px;
-            background-color: green;
-            margin-right: -25%;
+            width: 4rem;
+            background-color: rgb(153, 226, 208);
+            margin-right: -4rem;
             border-radius: 0px 15px 15px 0px;
-        }
+            display: flex;
+            @include desktop {
+                margin-right : -9rem;
+                width: 6rem;
+            }
         
-
+        }
         .menu_1 {
             animation: affichage 500ms;
             animation-fill-mode: both;
@@ -117,8 +131,28 @@
                 
                 display: flex;
                 align-items: flex-end;
+                margin-right: 3%;
                 
             }
+
+            &:hover .check_menu {
+                animation: translate 700ms;
+                margin-right: 0;
+            
+                .check {
+                    color: white;
+                    font-size: 30px;
+                    align-self: center;
+                    margin-left: 25%;
+                    animation: rotateCheck ease 700ms;
+                    @include desktop {
+                        margin-left : 35%;
+                    }
+
+                }
+                
+            }
+        
         }
 
         .menu_2{
@@ -131,6 +165,24 @@
             .price {
                 display: flex;
                 align-items: flex-end;
+                margin-right: 3%;
+            }
+
+            &:hover .check_menu {
+                animation: translate 700ms;
+                margin-right: 0;
+                animation-direction: normal;
+
+                .check {
+                    color: white;
+                    font-size: 30px;
+                    align-self: center;
+                    margin-left: 25%;
+                    animation: rotateCheck ease 700ms;
+                    @include desktop {
+                        margin-left : 35%;
+                    }
+                }
                 
             }
             
@@ -147,7 +199,24 @@
                 
                 display: flex;
                 align-items: flex-end;
+                margin-right: 3%;
                 
+            }
+            &:hover .check_menu {
+                animation: translate 700ms;
+                margin-right: 0;
+                animation-direction: normal;
+
+                .check {
+                    color: white;
+                    font-size: 30px;
+                    align-self: center;
+                    margin-left: 25%;
+                    animation: rotateCheck ease 700ms;
+                    @include desktop {
+                        margin-left : 35%;
+                    }
+                }
             }
         }
 
@@ -157,12 +226,31 @@
             animation-delay: 1610ms;
             display: flex;
             justify-content: space-between;
-
+            @include desktop {
+                animation-delay: 2660ms;
+            }
             .price {
                 
                 display: flex;
                 align-items: flex-end;
-                
+                margin-right: 3%;         
+            }
+
+            &:hover .check_menu {
+                animation: translate 700ms;
+                margin-right: 0;
+                animation-direction: normal;
+
+                .check {
+                    color: white;
+                    font-size: 30px;
+                    align-self: center;
+                    margin-left: 25%;
+                    animation: rotateCheck ease 700ms;
+                    @include desktop {
+                        margin-left : 35%;
+                    }
+                }
             }
         }
 
@@ -172,12 +260,33 @@
             animation-delay: 1960ms;
             display: flex;
             justify-content: space-between;
+            @include desktop {
+                animation-delay: 3010ms;
+            }
 
             .price {
                 
                 display: flex;
                 align-items: flex-end;
+                margin-right: 3%;
                 
+            }
+
+            &:hover .check_menu {
+                animation: translate 700ms;
+                margin-right: 0;
+                animation-direction: normal;
+
+                .check {
+                    color: white;
+                    font-size: 30px;
+                    align-self: center;
+                    margin-left: 25%;
+                    animation: rotateCheck ease 700ms;
+                    @include desktop {
+                        margin-left : 35%;
+                    }
+                }
             }
         }
 
@@ -187,59 +296,142 @@
             animation-delay: 2310ms;
             display: flex;
             justify-content: space-between;
+            @include desktop {
+                animation-delay: 3360ms;
+            }
 
             .price {
                 
                 display: flex;
                 align-items: flex-end;
+                margin-right: 3%;
                 
             }
-        }
 
+            &:hover .check_menu {
+                animation: translate 700ms;
+                margin-right: 0;
+                animation-direction: normal;
+
+                .check {
+                    color: white;
+                    font-size: 30px;
+                    align-self: center;
+                    margin-left: 25%;
+                    animation: rotateCheck ease 700ms;
+                    @include desktop {
+                        margin-left : 35%;
+                    }
+                }
+            }
+        }
         .menu_7{
-            animation: affichage 500ms ;
+            animation: affichage 700ms ;
             animation-fill-mode: both;
             animation-delay: 2660ms;
             display: flex;
             justify-content: space-between;
+            @include desktop {
+                animation-delay: 1610ms;
+            }
 
             .price {
                 
                 display: flex;
                 align-items: flex-end;
+                margin-right: 3%;
                 
+            }
+
+            &:hover .check_menu {
+                animation: translate 700ms;
+                margin-right: 0;
+                animation-direction: normal;
+
+                .check {
+                    color: white;
+                    font-size: 30px;
+                    align-self: center;
+                    margin-left: 25%;
+                    animation: rotateCheck ease 700ms;
+                    @include desktop {
+                        margin-left : 35%;
+                    }
+                }
             }
         }
 
         .menu_8{
-            animation: affichage 500ms ;
+            animation: affichage 700ms ;
             animation-fill-mode: both;
             animation-delay: 3010ms;
             display: flex;
             justify-content: space-between;
+            @include desktop {
+                animation-delay: 1960ms;
+            }
 
             .price {
                 
                 display: flex;
                 align-items: flex-end;
+                margin-right: 3%;
                
+            }
+
+            &:hover .check_menu {
+                animation: translate 700ms;
+                margin-right: 0;
+                animation-direction: normal;
+
+                .check {
+                    color: white;
+                    font-size: 30px;
+                    align-self: center;
+                    margin-left: 25%;
+                    animation: rotateCheck ease 700ms;
+                    @include desktop {
+                        margin-left : 35%;
+                    }
+                }
             }
         }
 
         .menu_9{
-            animation: affichage 500ms;
+            animation: affichage 700ms;
             animation-fill-mode: both;
             animation-delay: 3360ms;
             display: flex;
             justify-content: space-between;
+            @include desktop {
+                animation-delay: 2310ms;
+            }
 
             .price {
                 
                 display: flex;
                 align-items: flex-end;
-                
+                margin-right: 3%;
+            }
+            
+            &:hover .check_menu {
+                animation: translate 700ms;
+                margin-right: 0;
+                animation-direction: normal;
+
+                .check {
+                    color: white;
+                    font-size: 30px;
+                    align-self: center;
+                    margin-left: 25%;
+                    animation: rotateCheck ease 700ms;
+                    @include desktop {
+                        margin-left : 35%;
+                    }
+                }
             }
         }
+    
     
 
             h4 {
@@ -284,6 +476,7 @@
                 width: 50%;
             }
         }
+    
 
         .orga_desktop_dessert-button {
             @include desktop {
@@ -304,7 +497,7 @@
             }
         }
  
-
+    
     .commander { 
     width: 60%;
     display: flex;
@@ -327,10 +520,13 @@
         width: 100%;
         margin:0;}
    
-}
+    }
 
 .button--commande {
     margin-bottom:15%;
+    animation: affichage 500ms;
+    animation-fill-mode: both;
+    animation-delay: 3710ms;
     @include desktop {
     width: 40%;
     display: flex;
