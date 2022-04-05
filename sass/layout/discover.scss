@@ -61,15 +61,14 @@
     justify-content: center;
     margin: 15px auto;
     background: linear-gradient(100deg, #9356DC,70%,#FF79DA);
-    // box-shadow: 2px 1px 8px -2px black ;
     border-radius: 40px 40px 40px 40px;
     color: aliceblue;
     font-size: small;
     font-weight: 700;
     height: 25%; 
     cursor: pointer;
-    border: none;
     box-shadow: 3px 3px 3px 1px #e7e7e6;
+    border: none;
     @include desktop {font-size: 2rem;
     height:20%}
   }

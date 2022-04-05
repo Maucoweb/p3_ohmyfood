@@ -92,6 +92,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   box-shadow: 3px 3px 3px 1px #e7e7e6; }
   @media screen and (min-width: 698px) {
     .nav_restaurant_accueil li {
@@ -187,8 +188,8 @@ h2 {
   font-weight: 700;
   height: 25%;
   cursor: pointer;
-  border: none;
-  box-shadow: 3px 3px 3px 1px #e7e7e6; }
+  box-shadow: 3px 3px 3px 1px #e7e7e6;
+  border: none; }
   @media screen and (min-width: 900px) {
     .to_other_pages {
       font-size: 2rem;
