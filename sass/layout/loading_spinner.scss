@@ -19,8 +19,11 @@
             width: 60px;
             font-size: xx-large;
             animation: icone_spinner 3s;
+            animation-delay: 0.5s;
         }
 }
+
+
 
 @keyframes time_load {
     from {
@@ -29,6 +32,7 @@
 
     to {
         opacity: (0);
+        z-index: 0;
     }
     
 }

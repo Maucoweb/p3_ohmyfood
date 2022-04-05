@@ -210,13 +210,15 @@ h2 {
   #loading_spinner .icone {
     width: 60px;
     font-size: xx-large;
-    animation: icone_spinner 3s; }
+    animation: icone_spinner 3s;
+    animation-delay: 0.5s; }
 
 @keyframes time_load {
   from {
     opacity: 0, 6; }
   to {
-    opacity: 0; } }
+    opacity: 0;
+    z-index: 0; } }
 @keyframes icone_spinner {
   0% {
     transform: rotate(0); }
