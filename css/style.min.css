@@ -192,6 +192,38 @@ h2 {
       font-size: 2rem;
       height: 20%; } }
 
+#loading_spinner {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+  animation: time_load 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  #loading_spinner .icone {
+    width: 60px;
+    font-size: xx-large;
+    animation: icone_spinner 3s; }
+
+@keyframes time_load {
+  from {
+    opacity: 0, 6; }
+  to {
+    opacity: 0; } }
+@keyframes icone_spinner {
+  0% {
+    transform: rotate(0); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
 main {
   display: flex; }
   main .bloc_main {
