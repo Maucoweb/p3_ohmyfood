@@ -56,20 +56,26 @@
    }
   
   .to_other_pages {
-    width: 70%;
+    width: 60%;
     display: flex;
     justify-content: center;
     margin: 15px auto;
     background: linear-gradient(100deg, #9356DC,70%,#FF79DA);
     border-radius: 40px 40px 40px 40px;
     color: aliceblue;
-    font-size: small;
+    font-size: large;
     font-weight: 700;
     height: 25%; 
     cursor: pointer;
     box-shadow: 3px 3px 3px 1px #e7e7e6;
     border: none;
+    @include tablette-only {
+      width: 40%;
+    }
     @include desktop {font-size: 2rem;
+      width: 40%;
     height:20%}
+
   }
+  
     
