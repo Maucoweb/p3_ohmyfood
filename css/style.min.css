@@ -514,14 +514,16 @@ h4 {
   color: black;
   font-size: 0.9rem;
   margin-bottom: 0;
-  margin-left: 25px; }
+  margin-left: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .description_menu {
   display: flex;
   justify-content: space-around;
   margin-right: 30px;
   flex-direction: column;
-  margin-top: 2%;
   flex-wrap: nowrap;
   width: 60%; }
 
@@ -533,7 +535,10 @@ p {
   margin-top: 2%;
   font-weight: 300;
   color: #4c4c4c;
-  font-size: 0.85rem; }
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .detail_menu--plats {
   margin-top: 7%;
