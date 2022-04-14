@@ -728,7 +728,6 @@ h4 {
 }
 @media screen and (min-width: 900px) {
   .description_menu {
-    overflow: none;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
