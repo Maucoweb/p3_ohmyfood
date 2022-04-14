@@ -49,6 +49,9 @@
         @include desktop {
             justify-content: center;
         }
+        @include tablette-only {
+            justify-content: center;
+        }
 
         .restaurant_name {
             font-family: "shrikhand", sans-serif;
@@ -58,11 +61,39 @@
 
         .heart_page {
             font-size: 1.5rem;
-            margin-left: 5%;
+            position: absolute;
+            right: 8% ;
+            top: 50%;
+            cursor: pointer; 
+            @include tablette-only {
+                right: 20%;
+            }
+            @include desktop {
+                right: 30%;
+            }
         }
-        & :hover .heartfull_page {
-            background: linear-gradient(100deg, #9356DC,70%,#FF79DA);
-        }
+        .heartfull_page {
+                color: transparent;
+                background: linear-gradient(100deg, #9356DC,70%,#FF79DA);
+                background-clip: text;
+                -webkit-background-clip: text;
+                font-size: 1.5rem;
+                position: absolute;
+                right: 8% ;
+                top: 50%;
+                cursor: pointer;
+                opacity: 0;
+                transition: all 280ms;
+                @include tablette-only {
+                    right: 20%;
+                }
+                @include desktop {
+                    right: 30%;
+                }
+            }
+
+                &:hover .heartfull_page {
+                    opacity: 1;}
     }
 
 
@@ -82,6 +113,18 @@
         color: rgb(76, 76, 76);
         font-size: 1rem;
         font-weight: 400;
+        position:relative;
+
+        &::after {
+            content: "";
+            height: 0.25rem;
+            width: 2.5rem;
+            background-color: rgb(153, 226, 208);
+            position: absolute;
+            top:1.3rem;
+            left: 0rem;
+
+        }
     }
 
     .orga_desktop__menu {
@@ -101,11 +144,14 @@
         height: 72px;
         overflow: hidden;
         cursor: pointer;
+        @include desktop {
+            height: 75px;
+        }
     }
 
     .price {
         @include desktop {
-            margin-right: 0;
+            margin-right: 20%;
             width: 0;
         }
     }
@@ -116,18 +162,29 @@ color: black;
 font-size: 0.9rem;
 margin-bottom: 0;
 margin-left: 25px;
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
+
 }
 
 .description_menu {
     display: flex;
     justify-content: space-around;
-    margin-right: 30px;
+    margin-right: 25px;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 60%;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @include desktop {
+        overflow: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+   
+
+    & :hover {
+        animation: ellipsis 2s;
+    }
 }
 
 .detail_menu_price {
@@ -140,11 +197,13 @@ p {
     font-weight: 300;
     color: rgb(76, 76, 76);
     font-size: 0.85rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }      
 
+.sous_menu {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 
 .detail_menu--plats {
