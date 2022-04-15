@@ -60,7 +60,7 @@
     display: flex;
     justify-content: center;
     margin: 15px auto;
-    background: linear-gradient(100deg, #9356DC,70%,#FF79DA);
+    background: linear-gradient(45deg, #9356DC,70%,#FF79DA);
     border-radius: 40px 40px 40px 40px;
     color: aliceblue;
     font-size: smaller;
@@ -75,6 +75,11 @@
     @include desktop {font-size: 2rem;
       width: 40%;
     height:20%}
+
+    &:hover {
+      background: linear-gradient(100deg, #b656dc, 70%,#ff86f9);
+      box-shadow: 3px 3px 3px 1px #a1a1a1;
+    }
 
   }
   

@@ -261,6 +261,11 @@ margin-top: 10%;
     width: 100%;
     margin:0;}
 
+    &:hover {
+        background: linear-gradient(100deg, #b149da, 70%,#ff86f9);
+        box-shadow: 3px 3px 3px 1px #a1a1a1;
+      }
+
 }
 
 .button--commande {
