@@ -32,31 +32,4 @@
     }
 }
 
-@keyframes time_load {
-    from {
-        opacity:(0,6);
-    }
 
-    to {
-        opacity: (0);
-        visibility: hidden;
-    }
-    
-}
-
-@keyframes icone_spinner {
-    0% {
-        
-        transform: rotate(0);
-    }
-
-    50% {
-        
-        transform: rotate(180deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-        
-    }
-}

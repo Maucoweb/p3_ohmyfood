@@ -33,6 +33,9 @@
     object-fit: cover;
     width: 100%;
     height: 300px;
+    @include desktop {
+        height: 380px;
+    }
 }
 
 .menu_page {
