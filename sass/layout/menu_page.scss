@@ -1,3 +1,6 @@
+             /* effet translate check box validation + overflow et ellipsis */
+
+
 .check_menu {
     width: 4rem;
     background-color: rgb(153, 226, 208);
@@ -23,6 +26,9 @@
         margin-right :20%;
     }
 }
+
+           /*  comportement des différentes vignettes menu avec les animations associés */
+
 
 .menu_1 {
     animation: affichage 500ms;

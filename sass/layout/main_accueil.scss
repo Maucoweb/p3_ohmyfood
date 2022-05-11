@@ -20,6 +20,8 @@ main {
         @include desktop {font-size: 2rem;}
     }
 
+            /* restaurant vignettes */
+
     .restaurant_accueil {
         width: 100%;
         background-color: rgb(246, 246, 246);
@@ -79,6 +81,8 @@ main {
             color: black;          
             }
             
+            /* font awesome heart like + animation */
+
             .heartfull {
                 color: transparent;
                 background: linear-gradient(100deg, #9356DC,70%,#FF79DA);
@@ -97,6 +101,8 @@ main {
             
         }
             
+            /* contenu de la class "vignette_info_photo" */
+
         .title_menu {
             margin-top: 5px;
             margin-bottom: 5px;

@@ -1,5 +1,7 @@
 @import "../base/mixins.scss";
 
+                /* barre de geolocalisation */
+
 
 .geoloc_area {
   background-color: rgb(234, 234, 234); 
@@ -23,7 +25,7 @@
   @include desktop {font-size: 2rem;}
 }
 
-
+              /* texte d'introduction */
 
 .text_accueil {
     font-family: "roboto", sans-serif;
@@ -37,7 +39,7 @@
     @include desktop {height: 360px;;}
   }
   
-  #titre_resaccueil {
+  #titre_accueil {
     font-size: large;
     margin: 0;
     margin-left: 17%;
@@ -47,7 +49,7 @@
   }
     
   
-  #sstitre_resaccueil {
+  #sstitre_accueil {
     font-size: 15px;
     margin-left: 12%;
     margin-right: 12%;
@@ -55,6 +57,9 @@
     @include desktop {font-size: 2rem;}
    }
   
+            /* boutton "explorez nos restaurants" */
+
+
   .to_other_pages {
     width: 60%;
     display: flex;

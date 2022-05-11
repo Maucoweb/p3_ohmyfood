@@ -29,6 +29,8 @@
     background-color: rgb(247, 246, 246);
 }
 
+            /* photo d'illustration du restaurant */
+
 .illustration_page {
     object-fit: cover;
     width: 100%;
@@ -40,6 +42,8 @@
 
 .menu_page {
     background-color:rgb(247, 246, 246);
+
+        /* bloc comprenant heart like + restaurant_name */
 
     .ss_titre_page{
         display: flex;
@@ -99,6 +103,16 @@
                     opacity: 1;}
     }
 
+            /* bloc contenant les menus entrées et plats */
+
+    .orga_desktop__menu {
+        @include desktop {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
 
     .detail_menu--entrées {
         display: flex;
@@ -108,8 +122,6 @@
             width: 50%;
         }
     }
-
-
 
     h3 {
         margin-top: 0;
@@ -130,13 +142,7 @@
         }
     }
 
-    .orga_desktop__menu {
-        @include desktop {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
+                /* box plats contenant intitulé du menu + info + prix */
 
     article {
         border-radius: 15px;
@@ -220,7 +226,7 @@ align-items: center;
     width: 50%;
 }
 }
-
+            /* bloc contenant les plats dessert */
 
 .orga_desktop_dessert-button {
 @include desktop {
@@ -240,7 +246,7 @@ align-items: center;
     width: 50%;
 }
 }
-
+             /* boutton commander  */
 
 .commander { 
 width: 60%;
