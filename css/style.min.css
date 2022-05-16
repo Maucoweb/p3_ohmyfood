@@ -122,7 +122,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   list-style: none;
   counter-reset: order;
 }
@@ -135,19 +135,44 @@ header h1 {
   position: relative;
   font-weight: bold;
   background-color: #f6f6f6;
-  padding: 1rem 2rem;
   flex-grow: 1;
   height: 4rem;
   border-radius: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
   box-shadow: 3px 3px 3px 1px #e7e7e6;
+  /* puces numérotés */
 }
 @media screen and (min-width: 698px) {
   .nav_restaurant_accueil li {
     font-size: large;
+  }
+}
+.nav_restaurant_accueil li .txt_filtres {
+  margin: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 197px;
+  margin-left: 0;
+}
+@media screen and (min-width: 698px) {
+  .nav_restaurant_accueil li .txt_filtres {
+    margin: auto;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .nav_restaurant_accueil li .txt_filtres {
+    margin: auto;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    width: 50%;
   }
 }
 .nav_restaurant_accueil li:hover {
@@ -172,16 +197,23 @@ header h1 {
   color: #f7f7f7;
 }
 .nav_restaurant_accueil i.fas {
-  margin-right: 2rem;
+  padding-left: 25px;
   color: #a39c9c;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 698px) {
   .nav_restaurant_accueil i.fas {
     font-size: xx-large;
-    margin-right: 3rem;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  .nav_restaurant_accueil i.fas {
+    margin-left: auto;
   }
 }
 
+/* barre de geolocalisation */
 .geoloc_area {
   background-color: #eaeaea;
 }
@@ -212,6 +244,7 @@ h2 {
   }
 }
 
+/* texte d'introduction */
 .text_accueil {
   font-family: "roboto", sans-serif;
   display: flex;
@@ -228,7 +261,7 @@ h2 {
   }
 }
 
-#titre_resaccueil {
+#titre_accueil {
   font-size: large;
   margin: 0;
   margin-left: 17%;
@@ -236,23 +269,24 @@ h2 {
   font-weight: 400;
 }
 @media screen and (min-width: 900px) {
-  #titre_resaccueil {
+  #titre_accueil {
     font-size: 2rem;
   }
 }
 
-#sstitre_resaccueil {
+#sstitre_accueil {
   font-size: 15px;
   margin-left: 12%;
   margin-right: 12%;
   font-weight: 100;
 }
 @media screen and (min-width: 900px) {
-  #sstitre_resaccueil {
+  #sstitre_accueil {
     font-size: 2rem;
   }
 }
 
+/* boutton "explorez nos restaurants" */
 .to_other_pages {
   width: 60%;
   display: flex;
@@ -321,6 +355,7 @@ h2 {
 
 main {
   display: flex;
+  /* restaurant vignettes */
 }
 main .bloc_main {
   display: flex;
@@ -355,6 +390,7 @@ main .restaurant_accueil {
   position: relative;
   padding-top: 8%;
   padding-bottom: 10%;
+  /* contenu de la class "vignette_info_photo" */
 }
 @media screen and (min-width: 900px) {
   main .restaurant_accueil {
@@ -397,6 +433,7 @@ main .restaurant_accueil .vignette {
 main .restaurant_accueil .vignette_info_photo {
   position: relative;
   cursor: pointer;
+  /* font awesome heart like + animation */
 }
 main .restaurant_accueil .vignette_info_photo .heart {
   font-size: 1.5rem;
@@ -583,6 +620,7 @@ footer {
   background-color: #f7f6f6;
 }
 
+/* photo d'illustration du restaurant */
 .illustration_page {
   object-fit: cover;
   width: 100%;
@@ -596,6 +634,9 @@ footer {
 
 .menu_page {
   background-color: #f7f6f6;
+  /* bloc comprenant heart like + restaurant_name */
+  /* bloc contenant les menus entrées et plats */
+  /* box plats contenant intitulé du menu + info + prix */
 }
 .menu_page .ss_titre_page {
   display: flex;
@@ -664,6 +705,13 @@ footer {
 .menu_page .ss_titre_page:hover .heartfull_page {
   opacity: 1;
 }
+@media screen and (min-width: 900px) {
+  .menu_page .orga_desktop__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .menu_page .detail_menu--entrées {
   display: flex;
   flex-direction: column;
@@ -689,13 +737,6 @@ footer {
   position: absolute;
   top: 1.3rem;
   left: 0rem;
-}
-@media screen and (min-width: 900px) {
-  .menu_page .orga_desktop__menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 .menu_page article {
   border-radius: 15px;
@@ -780,6 +821,7 @@ p {
   }
 }
 
+/* bloc contenant les plats dessert */
 @media screen and (min-width: 900px) {
   .orga_desktop_dessert-button {
     display: flex;
@@ -800,6 +842,7 @@ p {
   }
 }
 
+/* boutton commander  */
 .commander {
   width: 60%;
   display: flex;
@@ -853,6 +896,7 @@ p {
   }
 }
 
+/* effet translate check box validation + overflow et ellipsis */
 .check_menu {
   width: 4rem;
   background-color: #99e2d0;
@@ -883,6 +927,7 @@ p {
   }
 }
 
+/*  comportement des différentes vignettes menu avec les animations associés */
 .menu_1 {
   animation: affichage 500ms;
   animation-fill-mode: both;
